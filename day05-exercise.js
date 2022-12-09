@@ -41,20 +41,20 @@ let kata = ['Hiu', 'Paus', 'Ikan Pari', 'Belut'];
 
 const coba3 = (kata) => {
     // cara 1
-    // let print = "";
-    // for(i = 0; i < kata.length; i++){
-    //     if(kata[i] == kata[kata.length - 1]){
-    //         print += " and " + kata[i];
-    //     } else if(kata[i] == kata[kata.length - 2]){
-    //         print += kata[i] + " ";
-    //     } else {
-    //         print += kata[i] + ", "
-    //     }
-    // }
-    // return print;
+    let print = "";
+    for(i = 0; i < kata.length; i++){
+        if(kata[i] == kata[kata.length - 1]){
+            print += " and " + kata[i];
+        } else if(kata[i] == kata[kata.length - 2]){
+            print += kata[i] + " ";
+        } else {
+            print += kata[i] + ", "
+        }
+    }
+    return print;
 
     // cara 2
-    return kata.slice(0, kata.length -1).join(', ') + ` and ${kata[kata.length -1]}`
+    // return kata.slice(0, kata.length -1).join(', ') + ` and ${kata[kata.length -1]}`
 }
 console.log(coba3(kata));
 
@@ -71,10 +71,6 @@ const jumlahin = (arr1, arr2) => {
     return arr3;
 }
 console.log(jumlahin(arr1,arr2));
-// if(arr1[i] == true && arr2[i] == undefined){
-        //     arr2[i] + 0;
-        // }
-        // arr3[i] = arr1[i] + arr2[i] 
 
 // 4. add element to the end of array but the element shoul
 let element = 4;
