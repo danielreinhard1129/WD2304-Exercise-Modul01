@@ -113,7 +113,8 @@ const terbalique = (data1) => {
         
         console.log(item);
         for(key in item){
-            key
+            console.log(item)
+            console.log(item[key])
             temp[item[key]] = key
         }
 

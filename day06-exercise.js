@@ -97,6 +97,7 @@ class Transaction {
             product: { ...product, qty },
             subTotal: qty * product?.price // tanda ? untuk mengetahui di class product ada object price atau tidak (hanya sebagai proteksi)
         })
+        console.log(product)
         this.cart.forEach(val => amount += val.subTotal)
         this.total = amount;
     }
